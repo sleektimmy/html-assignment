@@ -5,7 +5,7 @@
 }
 
 section{
-    width: 80%;
+    width: 50%;
     height: 400px;
     margin: 25px auto;
     border: 10px solid black;
@@ -18,46 +18,38 @@ section{
 
 
 
-section:nth-child(1)>p {
-    margin-left: 10px;
-    width: 40px;
-    height: 30px;;
-    background-image: linear-gradient(to right, green 33.33%, white 33.33% 66.66%, green 66.66%);
+section:first-of-type {
+        background-image: linear-gradient(to right, green 33.33%, white 33.33% 66.66%, green 66.66%);
 }
-section:nth-child(2)>p {
-    width: 40px;
-    margin-left: 10px;
-    height: 30px;
-    border: solid 1px black;
-    background-image: radial-gradient(circle at center,  red 30%, white 20%);
+section:nth-child(2){
+    
+    background-image: radial-gradient(circle at center,  red 20%, white 20%);
   }
-section:nth-child(3)>p {
-    width: 40px;
-    margin-left: 10px;
-    height: 30px;
-    background-image: linear-gradient(to bottom,red 33.33%, blue 33.33% 66.66%, green 66.66%);
+section:nth-child(3) {
+    
+    background-image: linear-gradient(to bottom,red 33.33%,white 20.30% 26.66%, blue 33.33% 66.66%, white 20% 20%,  green 46.66%);
   }
-section:nth-child(4)>p {
-    width: 40px;
-    margin-left: 10px;
-    height: 30px;
+section:nth-child(4) {
+    
     background-image: linear-gradient(to bottom,green 33.33%, yellow 33.33% 66.66%, blue 66.66%);
   }
-section:nth-child(5)>p {
-    width: 40px;
-    margin-left: 10px;
-    height: 30px;
+section:nth-child(5) {
+   
     background-image: linear-gradient(to right,blue 33.33%, white 33.33% 66.66%, red 66.66%);
   }
-section:nth-child(6)>p {
-    width: 40px;
-    margin-left: 10px;
-    height: 30px;
+section:nth-child(6) {
+    
     background-image: linear-gradient(to right,black 33.33%, yellow 33.33% 66.66%, red 66.66%);
   }
-section:nth-child(7)>p {
-    width: 40px;
-    margin-left: 10px;
-    height: 30px;
+section:nth-child(7) {
+    
     background-image: linear-gradient(to bottom,black 33.33%, yellow 33.33% 66.66%, red 66.66%);
+  }
+
+  section:nth-of-type(8){
+    background-color: red;
+    background-image: url(./images/star.png), url(./images/star.png), url(./images/star.png), url(./images/star.png), url(./images/star.png);
+    background-repeat: no-repeat;
+    background-position: 40px 50px, 150px 30px, 170px 70px, 170px 120px, 140px 170px;
+    background-size: 110px, 35px, 35px, 35px, 35px;
   }
